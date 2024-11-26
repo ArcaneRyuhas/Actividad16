@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a tu app favorita para el clima</h1>
+    </header>
+
+    <form id="weatherForm">
+        <label for="txt_city">Escribe el nombre de una ciudad:</label>
+        <input type="text" name="txt_city" id="txt_city" placeholder="Ciudad" required>
+
+        <br><br>
+        <input type="button" value="Revisar el clima actual" onclick="getWeatherData()">
+        <br><br>
+        <input type="button" value="Revisar el pronóstico del tiempo" onclick="getWeatherForecast()">
+    </form>
+
+    <main>
+        <br><br>
+        <br><br>
+
+        <div id="interno">
+            <div id="resultados">
+            </div>
+        </div>
+    </main>
+
+    
+
+    <footer>
+        <marquee behavior="scroll" direction="left">
+            Aplicación de clima desarrollada por Mario Portilla
+        </marquee>
+    </footer>
+
+    <script type="text/javascript" src="/js/weather.js"></script>
+</body>
+</html>
